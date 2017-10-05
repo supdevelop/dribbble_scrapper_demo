@@ -1,4 +1,19 @@
-<div id="banner">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Le Wagon x Audencia</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,900|Open+Sans:300,400,700" rel="stylesheet">
+    <link href="/style.css" rel='stylesheet'>
+  </head>
+
+  <body>
+    <div id="banner">
       <img src="images/logo.png" alt="" width="70px">
       <h1>5 days Bootcamp</h1>
       <p>Learn digital languages to create your projects</p>
@@ -44,48 +59,20 @@
 
     <div class="cta text-center">
       <h2>Maybe you need some inspiration</h2>
-      <p>Type a word and try our solution</p>
-
-      <form action="/search" method="get" class="form-inline">
-        <input type="text" name="query" placeholder="Search dribbles..." class="form-control">
-        <input type="submit" value="Search" class="btn btn-red">
-      </form>
+      <a class="btn btn-primary" href="search">Search</a>
     </div>
 
-
-
-
-  <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      <div id="gif">
-
+    <!-- Form -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div id="gif"></div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div id="wufoo-sx0l84z1iszo7g">
+          Fill out my <a href="https://pedrolane.wufoo.com/forms/sx0l84z1iszo7g">online form</a>.
+        </div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6">
-      <div id="wufoo-sx0l84z1iszo7g">
-Fill out my <a href="https://pedrolane.wufoo.com/forms/sx0l84z1iszo7g">online form</a>.
-</div>
-<script type="text/javascript">var sx0l84z1iszo7g;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'pedrolane',
-'formHash':'sx0l84z1iszo7g',
-'autoResize':true,
-'height':'517',
-'async':true,
-'host':'wufoo.com',
-'header':'show',
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { sx0l84z1iszo7g = new WufooForm();sx0l84z1iszo7g.initialize(options);sx0l84z1iszo7g.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
-
-   </div>
-  </div>
-
-
 
     <div id="footer" >
       <p>This is a playground landing ©Le Wagon</p>
@@ -96,3 +83,25 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
         <li><a href="#"><i class="fa fa-github"></i></a></li>
       </ul>
     </div>
+
+    <!-- For Wuffo form -->
+    <script type="text/javascript">
+      var sx0l84z1iszo7g;(function(d, t) {
+      var s = d.createElement(t), options = {
+      'userName':'pedrolane',
+      'formHash':'sx0l84z1iszo7g',
+      'autoResize':true,
+      'height':'517',
+      'async':true,
+      'host':'wufoo.com',
+      'header':'show',
+      'ssl':true};
+      s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+      s.onload = s.onreadystatechange = function() {
+      var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+      try { sx0l84z1iszo7g = new WufooForm();sx0l84z1iszo7g.initialize(options);sx0l84z1iszo7g.display(); } catch (e) {}};
+      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+      })(document, 'script');
+    </script>
+  </body>
+</html>

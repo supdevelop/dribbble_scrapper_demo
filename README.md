@@ -1,18 +1,17 @@
-# Dribbble scrapping POC
+# Scrapping demo
 
-Example with [Dribbble](https://dribbble.com) on how to use scrapping to get ressources from the web.
+## TODO
 
-Live demo: http://dribbble_scrapper.cleverapps.io/
+1. [Fork this repo](https://github.com/guillaumecabanel/dribbble_scrapper_demo#fork-destination-box)
+1. Clone your own copy to your local computer
+1. Update the home page
+1. Customize the scrapping
 
-## Usage
-1. Clone
-```
-git clone git@github.com:guillaumecabanel/dribbble_scrapper.git
-```
 
-2. Launch server
-```
-bundle exec rackup -p 8080 config.ru
-```
+## Deployement
 
-3. Visit http://localhost:8080
+1. From your terminal, type: `ruby -v` to get your ruby version
+1. In the file *Gemfile*, edit the ruby version to be the same as yours. (With the format x.x.x)
+1. From your terminal, go to your application directory and run: `bundle install`
+1. Commit and push your changes
+1. Set up CleverCloud
