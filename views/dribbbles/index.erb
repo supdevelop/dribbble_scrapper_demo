@@ -1,0 +1,22 @@
+<% if @dribbbles.any? %>
+<div class="container-full">
+     <ul class="list-unstyled">
+      <% @dribbbles.each do |dribbble| %>
+        <li>
+          <a href="<%= dribbble.url %>" target="_blank">
+           <div class="card-list">
+            <img src="<%= dribbble.image_url %>" class="img-rounded card-list-img">
+            <div class="card-list-text">
+              <h3><%= dribbble.title %></h3>
+              <p><%= dribbble.description %></p>
+              <h6><%= dribbble.author %></h6>
+            </div>
+           </div>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+</div>
+<% else %>
+  <p>There is no dribbble for this request :(</p>
+<% end %>
