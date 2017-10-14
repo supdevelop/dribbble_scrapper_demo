@@ -21,6 +21,13 @@ h2 {
   font-weight: lighter;
   font-size: 30px;
 }
+
+h3 {
+font-family: 'Gloria Hallelujah', cursive;
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+}
 a {
   color: yellow;
 }
